@@ -1,8 +1,10 @@
 {% extends 'layout.html' %}
+{% load static from staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% block static %}<link rel="stylesheet" href="{% static 'courses/css/courses.css' %}"> {% endblock %}
     <title>{% block title %}Available Courses{% endblock %}</title>
 </head>
 <body>
